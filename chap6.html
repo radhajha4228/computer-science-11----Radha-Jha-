@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies - HTML & CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        h2 {
+            color: #2196F3;
+        }
+        p, ul {
+            margin: 10px 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .note {
+            background-color: #e8f5e9;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
+            margin: 15px 0;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .example {
+            background-color: #e3f2fd;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 5px solid #2196F3;
+        }
+        .box {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .box h3 {
+            color: #FF5722;
+        }
+        .qa-section {
+            margin-top: 30px;
+        }
+        .qa {
+            background-color: #e0f7fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #2196F3;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Web Technologies - HTML & CSS</h1>
+
+    <div class="section">
+        <h2>Introduction to Web Technologies</h2>
+        <p>Web technologies refer to the set of tools, languages, and protocols used to build and maintain websites and web applications. The primary components of web development include HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets).</p>
+
+        <p>The web is built on the principles of communication over the Internet, using the client-server model. In the client-server model, the client (web browser) requests information from the server, which responds by sending back the required data or resources (like web pages).</p>
+    </div>
+
+    <div class="section">
+        <h2>HTML (Hypertext Markup Language)</h2>
+        <p><strong>HTML</strong> is the standard language used to create web pages. It provides the structure for the content on a web page, using elements called "tags." These tags define how content will be displayed and how it interacts with other elements on the page.</p>
+
+        <h3>Basic Structure of an HTML Document:</h3>
+        <ul>
+            <li><strong>DOCTYPE:</strong> Declares the document type and version of HTML.</li>
+            <li><strong>HTML:</strong> The root element that contains all other elements.</li>
+            <li><strong>Head:</strong> Contains metadata such as the document title, links to external resources (like CSS and JavaScript files), and character encoding.</li>
+            <li><strong>Body:</strong> Contains the visible content of the web page, such as text, images, and links.</li>
+        </ul>
+
+        <div class="example">
+            <p><strong>Basic HTML Example:</strong></p>
+            <pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>Why Learn HTML?
+Here are 5 common reasons to learn HTML:
+
+Build Websites: HTML is the basic building block for creating any website. Learning HTML can help you pursue a career in web development.
+Customize Content: Allows you to edit or tweak web pages, emails, or templates to fit your needs.
+Understand how the web works: Helps you grasp how the internet works and how web pages are structured.
+Employment Opportunities: According to Bureau of Labor Statistics projects that employment for web developers will grow 16% between 2022-2032, which is much faster than the average across all occupations.
+Learn Easily: HTML is beginner-friendly, making it a great first step into the world of coding and technology
+Features of HTML
+It is easy to learn and easy to use.
+It is platform-independent.
+Images, videos, and audio can be added to a web page.
+Hypertext can be added to the text.
+It is a markup language.
+HTML Element and HTML Tag
+HTML Element and HTML Tags are related but distinct. An HTML element is the complete structure, including the opening tag, content (if any), and the closing tag (if applicable).
+
+On the other hand, A tag is the actual keyword or name enclosed in angle brackets (< >) that tells the browser what kind of content to expect.
+
+HTML Elements 
+HTML Page Structure
+The basic structure of an HTML page is shown below. It contains the essential building-block elements (i.e. doctype declaration, HTML, head, title, and body elements) upon which all web pages are created.
+
+HTML page structure
+
+<!DOCTYPE html> – This is the document type declaration, not a tag. It declares that the document is an HTML5 document.
+<html> – This is called the HTML root element. All other elements are contained within it.
+<head> – The head tag contains the “behind the scenes” elements for a webpage. Elements within the head aren’t visible on the front end of a webpage. Typical elements inside the <head> include:
+<title>: Defines the title displayed on the browser tab.
+<meta>: Provides information like the character set or viewport settings.
+<link>: Links external stylesheets or resources.
+<style>: Embeds internal CSS styles.
+<script>: Embeds JavaScript for functionality.
+<title> – The title is what is displayed on the top of your browser when you visit a website and contains the title of the webpage that you are viewing.
+<h2> – The <h2> tag is a second-level heading tag.
+<p>– The <p> tag represents a paragraph of text.
+<body> – The body tag is used to enclose all the visible content of a webpage. In other words, the body content is what the browser will show on the front end.
+An HTML document can be created using an HTML text editor. Save the text file using the “.html” or “.htm” extension. Once saved as an HTML document, the file can be opened as a webpage in the browser.
+
+Note: Basic/built-in text editors are Notepad (Windows) and TextEdit (MacOS). Other advanced text editors include Sublime Text, Visual Studio Code, Froala, etc.
+
+
+Web Browsers
+Unlike other programming languages, HTML does not show output on the compiler. Web browsers show the results of an HTML code.
+
+It reads HTML files and determines how to show content with the help of HTML tags. Any web browser (Google, Safari, Mozilla Firefox, etc) can be used to open a . HTML file and view the results.
+
+HTML file example
+index.html
+
+HTML History
+Currently, we are using HTML5, which is the latest and most advanced version of HTML.
+
+HTML was initially created by Tim Berners-Lee in 1991 as a way to share and structure documents on the web.
+
+The first-ever version was HTML 1.0, a basic and limited version. However, the first standardized version, HTML 2.0, was published in 1995, laying the foundation for web development as we know it today
+
+HTML History
+
+Advantages of HTML
+HTML is used to build websites.
+It is supported by all browsers.
+It can be integrated with other languages like CSS, JavaScript, etc.
+Disadvantages of HTML
+HTML can only create static web pages. For dynamic web pages and logic, we need JavaScript.
+A large amount of code has to be written to create a simple web page.
+Conclusion
+In conclusion, mastering HTML is a fundamental step in your web development journey. This guide serves as a comprehensive resource for understanding HTML, from the basics to more advanced topics. Remember, HTML is more than just a markup language – it’s a powerful tool for creating engaging, accessible, and SEO-friendly websites.
+
+To learn more about HTML, visit the HTML Tutorial Page.
+
+Master The Art of Web Development with Full Stack Web Development
+
+
+HTML Introduction – FAQs
+What is HTML?
+HTML is a global markup language for web. You can create any a webpage using HTML and any browser can open that HTML file.
+
+
+What are the basics of HTML?
+HTML basics include understanding the syntax, elements/tags, attributes, structure and formatting of HTML file.
+
+
+What are the 5 uses of HTML?
+5 key uses of HTML are:
+
+
+Creating web page.
+Integrating CSS and JavaScript
+Accessing web content
+Semantic markup
+Cross-platform compatibility
+What is HTML syntax?
+HTML syntax means the set of rules and regulation that defines how HTML code is structured and written.</p>
+    <a href="https://www.example.com">Visit Example</a>
+</body>
+</html>
+            </pre>
+        </div>
+
+        <div class="note">  Why Learn HTML?
+Here are 5 common reasons to learn HTML:
+
+Build Websites: HTML is the basic building block for creating any website. Learning HTML can help you pursue a career in web development.
+Customize Content: Allows you to edit or tweak web pages, emails, or templates to fit your needs.
+Understand how the web works: Helps you grasp how the internet works and how web pages are structured.
+Employment Opportunities: According to Bureau of Labor Statistics projects that employment for web developers will grow 16% between 2022-2032, which is much faster than the average across all occupations.
+Learn Easily: HTML is beginner-friendly, making it a great first step into the world of coding and technology
+Features of HTML
+It is easy to learn and easy to use.
+It is platform-independent.
+Images, videos, and audio can be added to a web page.
+Hypertext can be added to the text.
+It is a markup language.
+HTML Element and HTML Tag
+HTML Element and HTML Tags are related but distinct. An HTML element is the complete structure, including the opening tag, content (if any), and the closing tag (if applicable).
+
+On the other hand, A tag is the actual keyword or name enclosed in angle brackets (< >) that tells the browser what kind of content to expect.
+
+HTML Elements 
+HTML Page Structure
+The basic structure of an HTML page is shown below. It contains the essential building-block elements (i.e. doctype declaration, HTML, head, title, and body elements) upon which all web pages are created.
+
+HTML page structure
+</body></html>

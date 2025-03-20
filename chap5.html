@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Concepts and C Programming - Class 11 NEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        h2 {
+            color: #2196F3;
+        }
+        p, ul {
+            margin: 10px 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .note {
+            background-color: #e8f5e9;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
+            margin: 15px 0;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .example {
+            background-color: #e3f2fd;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 5px solid #2196F3;
+        }
+        .box {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .box h3 {
+            color: #FF5722;
+        }
+        .qa-section {
+            margin-top: 30px;
+        }
+        .qa {
+            background-color: #e0f7fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #2196F3;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Programming Concepts and logics</h1>
+
+    <div class="section">
+        <h2>Introduction to C Programming</h2>
+        <p><strong>C Programming</strong> is one of the most widely used programming languages and forms the foundation for learning other high-level languages. It was developed by Dennis Ritchie in 1972. C is a structured, procedural programming language, which makes it ideal for system programming, building operating systems, and embedded systems.</p>
+        
+        <h3>Basic Structure of a C Program:</h3>
+        <ul>
+            <li><strong>Header files:</strong> The program begins by including libraries that provide built-in functions. Example: <code>#include &lt;stdio.h&gt;</code></li>
+            <li><strong>Main Function:</strong> Every C program contains a <code>main()</code> function, which is the entry point for the program. Example: <code>int main()</code></li>
+            <li><strong>Statements:</strong> C statements are written inside the main function and can be of various types such as assignments, function calls, or control statements.</li>
+            <li><strong>Return Statement:</strong> A program returns a value from the <code>main()</code> function using the return keyword. Example: <code>return 0;</code></li>
+        </ul>
+        
+        <div class="example">
+            <p><strong>Basic C Program Example:</strong></p>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");   // Printing text
+    return 0;
+}
+            </pre>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> C is a case-sensitive language, so <code>main()</code> and <code>Main()</code> would be treated as different.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Data Types in C</h2>
+        <p>C programming supports a variety of data types, which define the type of data a variable can hold. C has both basic and derived data types.</p>
+
+        <h3>Basic Data Types:</h3>
+        <ul>
+            <li><strong>int:</strong> Used for integer numbers. Example: <code>int a = 5;</code></li>
+            <li><strong>float:</strong> Used for floating-point numbers. Example: <code>float b = 3.14;</code></li>
+            <li><strong>char:</strong> Used for a single character. Example: <code>char ch = 'A';</code></li>
+            <li><strong>double:</strong> Used for double-precision floating-point numbers. Example: <code>double d = 3.14159;</code></li>
+        </ul>
+
+        <h3>Derived Data Types:</h3>
+        <ul>
+            <li><strong>Arrays:</strong> A collection of similar data types stored in contiguous memory locations. Example: <code>int arr[5];</code></li>
+            <li><strong>Pointers:</strong> Used to store memory addresses of variables. Example: <code>int *ptr;</code></li>
+            <li><strong>Structures:</strong> Used to store a collection of different data types. Example: <code>struct Student { int roll_no; char name[50]; };</code></li>
+        </ul>
+
+        <div class="note">
+            <strong>Note:</strong> C supports both signed and unsigned versions of integer data types.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Control Structures in C</h2>
+        <p>C provides various control structures to control the flow of execution in a program. These structures include conditional statements and loops.</p>
+
+        <h3>Conditional Statements:</h3>
+        <ul>
+            <li><strong>if-else:</strong> Executes a block of code if a specified condition is true, otherwise executes a different block. Example:
+                <pre>if (a > b) { printf("a is greater"); } else { printf("b is greater"); }</pre>
+            </li>
+            <li><strong>switch:</strong> Allows multi-way branching. It tests a variable against multiple values and executes the corresponding block. Example:
+                <pre>switch (x) { case 1: printf("One"); break; case 2: printf("Two"); break; }</pre>
+            </li>
+        </ul>
+
+        <h3>Loops in C:</h3>
+        <ul>
+            <li><strong>for loop:</strong> A loop that runs a specified number of times. Example:
+                <pre>for (int i = 0; i < 5; i++) { printf("%d\n", i); }</pre>
+            </li>
+            <li><strong>while loop:</strong> A loop that runs while a condition is true. Example:
+                <pre>while (x < 10) { x++; }</pre>
+            </li>
+            <li><strong>do-while loop:</strong> Similar to a while loop, but checks the condition after the block of code. Example:
+                <pre>do { x++; } while (x < 10);</pre>
+            </li>
+        </ul>
+
+        <div class="note">
+            <strong>Note:</strong> Use the <code>break</code> statement to exit from a loop or switch statement early.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Functions in C</h2>
+        <p>A function is a block of code that performs a specific task. It can be called multiple times within a program, reducing redundancy.</p>
+
+        <h3>Function Declaration and Definition:</h3>
+        <ul>
+            <li><strong>Function Declaration:</strong> Specifies the function name, return type, and parameters. Example:
+                <pre>int add(int a, int b);</pre>
+            </li>
+            <li><strong>Function Definition:</strong> Provides the actual implementation of the function. Example:
+                <pre>int add(int a, int b) { return a + b; }</pre>
+            </li>
+        </ul>
+
+        <h3>Function Call:</h3>
+        <pre>int result = add(5, 10);</pre>
+
+        <div class="note">
+            <strong>Note:</strong> Functions can return values (like <code>int</code>, <code>float</code>) or be void (no return value).
+        </div>
+    </div>
+
+    <div class="qa-section">
+        <h2>Q&A Section</h2>
+
+        <div class="qa">
+            <p><strong>Question 1:</strong> What is the difference between an array and a pointer in C?</p>
+            <p><strong>Answer:</strong> An array is a collection of elements of the same data type stored in contiguous memory locations, while a pointer is a variable that stores the memory address of another variable.</p>
+        </div>
+
+        <div class="qa">
+            <p><strong>Question 2:</strong> What is the purpose of the <code>return</code> statement in a C program?</p>
+            <p><strong>Answer:</strong> The <code>return</code> statement is used to exit from the <code>main()</code> function (or any other function) and optionally return a value. In the <code>main()</code> function, <code>return 0;</code> is typically used to indicate successful execution.</p>
+        </div>
+
+        <div class="qa">
+            <p><strong>Question 3:</strong> How does a <code>switch</code> statement work in C?</p>
+            <p><strong>Answer:</strong> The <code>switch</code> statement evaluates an expression and executes a block of code based on matching the expression with a case value. It is used when there are multiple possible conditions to check, offering an alternative to multiple <code>if-else</code> statements.</p>
+        </div>
+
+        <div class="qa">
+            <p><strong>Question 4:</strong> What is a function prototype in C?</p>
+            <p><strong>Answer:</strong> A function prototype is a declaration of the function that specifies the function name, return type, and parameters, but does not include the function body. It is used before calling a function to inform the compiler about the function's structure.</p>
+        </div>
+
+        <div class="qa">
+            <p><strong>Question 5:</strong> How can you pass an array to a function in C?</p>
+            <p><strong>Answer:</strong> An array can be passed to a function by passing its name as an argument. The function will receive a pointer to the first element of the array. Example:
+                <pre>void printArray(int arr[], int size);</pre>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

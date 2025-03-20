@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Algebra and Number System - Class 11</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        h2 {
+            color: #2196F3;
+        }
+        p, ul {
+            margin: 10px 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .note {
+            background-color: #e8f5e9;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
+            margin: 15px 0;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .example {
+            background-color: #e3f2fd;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 5px solid #2196F3;
+        }
+        .box {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .box h3 {
+            color: #FF5722;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Boolean Algebra and Number System - Class 11</h1>
+
+    <div class="section">
+        <h2>Boolean Algebra</h2>
+        <p><strong>Boolean Algebra</strong> is a branch of mathematics that deals with operations on logical values and variables. These values are usually represented as either <strong>True</strong> (1) or <strong>False</strong> (0). Boolean algebra is primarily used in the design and operation of digital circuits, search engines, and computer programming.</p>
+
+        <h3>Basic Operations in Boolean Algebra:</h3>
+        <ul>
+            <li><strong>AND:</strong> The result is 1 only if both operands are 1. Symbol: <code>A AND B = A * B</code></li>
+            <li><strong>OR:</strong> The result is 1 if at least one of the operands is 1. Symbol: <code>A OR B = A + B</code></li>
+            <li><strong>NOT:</strong> The result is the negation of the operand. Symbol: <code>NOT A = A'</code></li>
+        </ul>
+
+        <h3>Truth Table Example:</h3>
+        <div class="example">
+            <p><strong>AND Operation (A * B):</strong></p>
+            <pre>
+A | B | A * B
+--------------
+0 | 0 |  0
+0 | 1 |  0
+1 | 0 |  0
+1 | 1 |  1
+            </pre>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> In Boolean Algebra, 0 represents False and 1 represents True.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Number System</h2>
+        <p>The <strong>Number System</strong> is a way of representing numbers in different formats. There are different types of number systems that are used in mathematics and computer science. The most common ones are:</p>
+
+        <h3>Types of Number Systems:</h3>
+        <ul>
+            <li><strong>Binary System:</strong> It uses two digits, 0 and 1. It is the foundation of digital computing. Example: <code>1011<sub>2</sub></code></li>
+            <li><strong>Decimal System:</strong> It uses ten digits, from 0 to 9. This is the number system we use in everyday life. Example: <code>1234<sub>10</sub></code></li>
+            <li><strong>Octal System:</strong> It uses eight digits, from 0 to 7. Example: <code>45<sub>8</sub></code></li>
+            <li><strong>Hexadecimal System:</strong> It uses sixteen digits, from 0 to 9 and A to F. Example: <code>3F<sub>16</sub></code></li>
+        </ul>
+
+        <h3>Conversion Between Number Systems:</h3>
+        <div class="box">
+            <h3>Binary to Decimal Conversion:</h3>
+            <p><strong>Example:</strong> Convert <code>1011<sub>2</sub></code> to Decimal.</p>
+            <p><strong>Solution:</strong> Start from the right and multiply each digit by the corresponding power of 2:</p>
+            <pre>
+1011<sub>2</sub> = 1 * 2^3 + 0 * 2^2 + 1 * 2^1 + 1 * 2^0
+                = 8 + 0 + 2 + 1
+                = 11<sub>10</sub>
+            </pre>
+            <p><strong>Answer:</strong> <code>1011<sub>2</sub> = 11<sub>10</sub></code></p>
+        </div>
+
+        <div class="example">
+            <p><strong>Hexadecimal to Binary Conversion:</strong></p>
+            <pre>
+3F<sub>16</sub> = 0011 1111<sub>2</sub>
+            </pre>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> In conversion, the hexadecimal system uses values from 0 to F, where F is equivalent to 15 in decimal.
+        </div>
+    </div>
+
+</body>
+</html>
