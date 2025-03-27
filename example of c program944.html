@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Programming Examples by Radha Jha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #273;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Programming Examples by Radha Jha</h1>
+        
+        <h2>1. Prime Number or Not</h2>
+        <pre>
+#include <stdio.h>
+int main() {
+  int n, i, c = 0;
+  printf("Enter any positive integer: ");
+  scanf("%d", &n);
+  for (i = 1; i <= n ; ++i) {
+    if (n % i == 0) {
+       c=c+1;
+      break;
+    }
+  }
+  if (c == 2)
+    printf("%d is a prime number.", n);
+  else
+    printf("%d is not a prime number.\n", n);
+    
+    printf("Executed by RADHA JHA");
+
+  return 0;
+}
+        </pre>
+        <h3>Output:
+		   <a href="primenumber.png">prime number</a>
+		</h3>
+        <p>Determines if a number is prime or not based on user input.</p>
+
+        <h2>2. Factorial</h2>
+        <pre>
+#include <stdio.h>  
+
+int main() {    
+    int n, i, f = 1;   
+    printf("Enter any positive integer: ");   
+    scanf("%d", &n);    
+    
+    for (i = 1; i <= n; i++) {     
+        f = f * i; 
+    }     
+    printf("%d is the factorial of the given number\n", f);     
+    printf("Executed by RADHA JHA");   
+    
+    return 0; 
+}
+        </pre>
+        <h3>Output:
+
+   <a href="factorial.png">factorial</a>
+  
+</h3>
+        <p>Calculates the factorial of a given positive integer.</p>
+
+        <h2>3. Palindrome Number or Not</h2>
+        <pre>
+#include <stdio.h>
+
+int main() {
+    int n, reversed = 0, remainder, original;
+
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+
+    original = n;  
+  
+    while (n != 0) {
+        remainder = n % 10;        
+        reversed = reversed * 10 + remainder; 
+        n /= 10;                   
+    }
+    if (original == reversed) {
+        printf("%d is a palindrome.\n", original);
+    } else {
+        printf("%d is not a palindrome.\n", original);
+    }
+ printf("EXECUTED BY RADHA JHA");
+    return 0;
+}
+        </pre>
+        <h3>Output:
+		   <a href="palindrome.png">palindrome</a></h3>
+        <p>Checks if the given number is a palindrome.</p>
+
+        <h2>4. Fibonacci Series</h2>
+        <pre>
+#include <stdio.h>
+
+int main() {
+    int n,i,a=0,b=1,c;
+
+    printf("Enter any integer: ");
+    scanf("%d", &n);
+    printf("the fibonacci series is given below:\n");
+    for(i=0;i<n;i++) {
+        c=a+b;
+        printf("%d\n",a);
+        a=b;
+        b=c;
+    }
+ printf("EXECUTED BY RADHA JHA");
+    return 0;
+}
+        </pre>
+        <h3>Output:
+		   <a href="fibonacci.png">fibonacci</a>
+		</h3>
+        <p>Prints the Fibonacci series up to the given number.</p>
+
+        <h2>5. Perfect Number or Not</h2>
+        <pre>
+#include <stdio.h>
+
+int main() 
+{
+    int n, i, s = 0;
+    printf("Enter any positive integer: ");
+    scanf("%d", &n);
+
+    for (i = 1; i < n; i++) {  
+        if (n % i == 0) {
+            s = s + i;
+        }
+    }
+
+    if (n == s) {
+        printf("%d is a perfect number.\n", n);
+    } else {
+        printf("%d is not a perfect number.\n", n);
+    }
+
+    printf("EXECUTED BY RADHA JHA\n");
+    return 0;
+}
+        </pre>
+        <h3>Output:
+		   <a href="perfect number.png">perfect number</a>
+		</h3>
+        <p>Checks if the entered number is a perfect number.</p>
+		<h2>ITERATIVE CONTROL STRUCTURE</h2>
+		<P>Iteration control structures are programming constructs that allow you to repeat code blocks multiple times. <br>They are essential for performing repetitive tasks and processing data efficiently.<br></p>
+		<h3>for loop</h3>
+		<p>for Loop:<br>
+The for loop is a simple and versatile iteration construct. It executes a block of code a specified number of times.<br>
+<br>syntax:
+<br>
+for(i=1;i < n ; i++) <br>
+<h3> while </h3>
+<p>for Loop
+The for loop is a simple and versatile iteration construct. It executes a block of code a specified number of times.
+<br>
+syntax:
+count:int = 0;<br>
+while count < 10 <br>{
+  print(count);<br>
+  count += 1;,br>
+}<br>
+<h3>do while</h3>
+<p>The do-while loop is similar to the while loop, but it guarantees that the code block is executed at least once before the condition is checked.<br></p>
+syntax:<br> input: string = "";<br>
+do <br>{<br>
+  print("Enter a number:");<br>
+  input = readLine();<br>
+} while input.isEmpty();<br>
+ <h2>EXAMPLE </h2>
+<p>code </p><br>
+Certainly! Below is an HTML snippet that demonstrates how to display the C code for iterative control structures (for, while, and do-while loops) along with their outputs. This example uses <pre> and <code> tags to format the code and output for better readability.
+
+    <h1>Iterative Control Structures in C</h1>
+
+    <h2>For Loop</h2>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i;
+    for (i = 0; i < 5; i++) {
+        printf("For Loop: %d\n", i);
+    }
+    return 0;
+}
+    </code></pre>
+    <div class="output">
+        <strong>Output:</strong>
+        <pre>For Loop: 0
+For Loop: 1
+For Loop: 2
+For Loop: 3
+For Loop: 4</pre>
+    </div>
+
+    <h2>While Loop</h2>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 0;
+    while (i < 5) {
+        printf("While Loop: %d\n", i);
+        i++;
+    }
+    return 0;
+}
+    </code></pre>
+    <div class="output">
+        <strong>Output:</strong>
+        <pre>While Loop: 0
+While Loop: 1
+While Loop: 2
+While Loop: 3
+While Loop: 4</pre>
+    </div>
+
+    <h2>Do-While Loop</h2>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 0;
+    do {
+        printf("Do-While Loop: %d\n", i);
+        i++;
+    } while (i < 5);
+    return 0;
+}
+    </code></pre>
+    <div class="output">
+        <strong>Output:</strong>
+        <pre>Do-While Loop: 0
+Do-While Loop: 1
+Do-While Loop: 2
+Do-While Loop: 3
+Do-While Loop: 4
+</body>
+</html>
