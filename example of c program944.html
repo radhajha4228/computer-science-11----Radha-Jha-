@@ -264,5 +264,38 @@ Do-While Loop: 1
 Do-While Loop: 2
 Do-While Loop: 3
 Do-While Loop: 4
+ <h2>Arrays in C</h2>
+    
+    <h3>Definition and Syntax:</h3>
+    <pre>
+An array is a collection of elements of the same data type stored in contiguous memory locations.
+Syntax:
+    data_type array_name[size];
+Example:
+    int numbers[5];
+    </pre>
+
+    <h3>Example Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int numbers[5] = {10, 20, 30, 40, 50}; // Array declaration and initialization
+
+    printf("Array elements are:\\n");
+    for(int i = 0; i < 5; i++) {
+        printf("%d ", numbers[i]); // Printing array elements
+    }
+    
+    return 0;
+}
+    </pre>
+
+    <h3>Expected Output:</h3>
+    <pre>
+Array elements are:
+10 20 30 40 50
+    </pre>
+
 </body>
 </html>
