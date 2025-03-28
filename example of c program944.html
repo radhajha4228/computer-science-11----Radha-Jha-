@@ -264,38 +264,121 @@ Do-While Loop: 1
 Do-While Loop: 2
 Do-While Loop: 3
 Do-While Loop: 4
- <h2>Arrays in C</h2>
-    
-    <h3>Definition and Syntax:</h3>
+<br><br>
+<h1>Arrays in C</h1>
+
+    <h2>Definition</h2>
+    <p>An array is a collection of elements of the same data type, stored in contiguous memory locations. It allows storing multiple values in a single variable.</p>
+
+    <h2>Syntax</h2>
     <pre>
-An array is a collection of elements of the same data type stored in contiguous memory locations.
-Syntax:
-    data_type array_name[size];
-Example:
-    int numbers[5];
+datatype arrayName[size];
     </pre>
 
-    <h3>Example Code:</h3>
+    <h2>Example:</h2>
     <pre>
 #include &lt;stdio.h&gt;
-
 int main() {
-    int numbers[5] = {10, 20, 30, 40, 50}; // Array declaration and initialization
-
-    printf("Array elements are:\\n");
-    for(int i = 0; i < 5; i++) {
-        printf("%d ", numbers[i]); // Printing array elements
+    int numbers[5] = {10, 20, 30, 40, 50};
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", numbers[i]);
     }
-    
     return 0;
 }
     </pre>
 
-    <h3>Expected Output:</h3>
+    <h2>Output:</h2>
+    <pre>10 20 30 40 50</pre>
+
+    <h2>1D Array</h2>
+    <h3>Definition</h3>
+    <p>A one-dimensional array is a list of elements stored in a linear sequence.</p>
+
+    <h3>Syntax:</h3>
     <pre>
-Array elements are:
-10 20 30 40 50
+datatype arrayName[size];
     </pre>
 
+    <h3>Example:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int arr[3] = {1, 2, 3};
+    for (int i = 0; i < 3; i++) {
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
+    </pre>
+
+    <h3>Output:</h3>
+    <pre>1 2 3</pre>
+
+    <h2>2D Array</h2>
+    <h3>Definition</h3>
+    <p>A two-dimensional array is an array of arrays, forming a matrix-like structure.</p>
+
+    <h3>Syntax:</h3>
+    <pre>
+datatype arrayName[rows][columns];
+    </pre>
+
+    <h3>Example:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int matrix[2][2] = {{1, 2}, {3, 4}};
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+    </pre>
+
+    <h3>Output:</h3>
+    <pre>
+1 2
+3 4
+    </pre>
+
+    <h2>3D Array</h2>
+    <h3>Definition</h3>
+    <p>A three-dimensional array is an array of two-dimensional arrays, used to store multi-layered data.</p>
+
+    <h3>Syntax:</h3>
+    <pre>
+datatype arrayName[size1][size2][size3];
+    </pre>
+
+    <h3>Example:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int arr[2][2][2] = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}};
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            for (int k = 0; k < 2; k++) {
+                printf("%d ", arr[i][j][k]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+    </pre>
+
+    <h3>Output:</h3>
+    <pre>
+1 2
+3 4
+
+5 6
+7 8
+    </pre>
+<br>
 </body>
 </html>
